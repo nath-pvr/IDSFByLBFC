@@ -116,7 +116,7 @@ nav,
     text-decoration: underline var(--color-gold);
 }
 
-#formation h2#formEtat{
+h2.formEtat{
     text-decoration:underline var(--color-blue-grey)!important;
 }
 
@@ -129,7 +129,7 @@ div#accordionFormEtat div.accordion-item button:hover{
     background-color: rgba(48,52,64,0.5);
 }
 
-#formation h2#formFede{
+#formation h2.formFede{
     text-decoration:underline var(--color-blue)!important;
 }
 
