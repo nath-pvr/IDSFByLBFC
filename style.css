@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6{
     color: white!important;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Menus */
 
 nav,
@@ -120,7 +124,7 @@ div#accordionFormEtat div.accordion-item h2, div#accordionFormEtat div.accordion
     color:var(--color-blue-grey)!important;
 }
 
-div#accordionFormEtat div.accordion-item :hover{
+div#accordionFormEtat div.accordion-item button:hover{
     color:white!important;
     background-color: rgba(48,52,64,0.5);
 }
@@ -137,7 +141,7 @@ div#accordionFormContinue div.accordion-item h2, div#accordionFormContinue div.a
     color:var(--color-blue)!important;
 }
 
-div#accordionFormContinue div.accordion-item :hover, .accordion-button {
+div#accordionFormContinue div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(15,27,92,0.5);
     
@@ -155,7 +159,7 @@ div#accordionsocleCom div.accordion-item h2, div#accordionsocleCom div.accordion
     color:#7A7A7A!important;
 }
 
-div#accordionsocleCom div.accordion-item :hover, .accordion-button {
+div#accordionsocleCom div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(122,122,122,0.5);    
 }
@@ -168,7 +172,7 @@ div#accordionJanime div.accordion-item h2, div#accordionJanime div.accordion-ite
     color:#61CE70!important;
 }
 
-div#accordionJanime div.accordion-item :hover, .accordion-button {
+div#accordionJanime div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(97,206,112,0.5);    
 }
@@ -181,7 +185,7 @@ div#accordionJentraine div.accordion-item h2, div#accordionJentraine div.accordi
     color:#0078af!important;
 }
 
-div#accordionJentraine div.accordion-item :hover, .accordion-button {
+div#accordionJentraine div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(0,120,175,0.5);    
 }
@@ -194,7 +198,7 @@ div#accordionArbitrage div.accordion-item h2, div#accordionArbitrage div.accordi
     color:#bb0d23!important;
 }
 
-div#accordionArbitrage div.accordion-item :hover, .accordion-button {
+div#accordionArbitrage div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(187,13,35,0.5);    
 }
@@ -207,7 +211,7 @@ div#accordionJedirige div.accordion-item h2, div#accordionJedirige div.accordion
     color:#ffbf40!important;
 }
 
-div#accordionJedirige div.accordion-item :hover, .accordion-button {
+div#accordionJedirige div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(255, 191, 64, 0.5);    
 }
@@ -220,7 +224,7 @@ div#accordionJeforme div.accordion-item h2, div#accordionJeforme div.accordion-i
     color:#800080!important;
 }
 
-div#accordionJeforme div.accordion-item :hover, .accordion-button {
+div#accordionJeforme div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(128,0,128, 0.5);    
 }
@@ -233,7 +237,7 @@ div#accordionFormComp div.accordion-item h2, div#accordionFormComp div.accordion
     color:#3C7AB3!important;
 }
 
-div#accordionFormComp div.accordion-item :hover, .accordion-button {
+div#accordionFormComp div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(60,122,179, 0.5);    
 }

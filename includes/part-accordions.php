@@ -7,6 +7,7 @@
     <div id="collapse<?php the_ID()?>" class="accordion-collapse collapse" aria-labelledby="heading<?php the_ID()?>" data-bs-parent="#accordionFormation">
       <div class="accordion-body">
         <?php the_excerpt() ?>
+        <p>Pour plus d'information</p><a href="<?=the_permalink()?>">Cliquer ici</a>
       </div>
     </div>
 </div>

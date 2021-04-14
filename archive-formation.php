@@ -6,10 +6,8 @@
 
         <div id="formation" class="col-lg-8 mt-5">
 
-            <?php $modules = get_terms(['taxonomy' => "modules"]);
-
-            // var_dump($modules);
-
+            <?php 
+            
             $formEtat = array(
                 'showposts'     => -1,
                 'post_type'     => 'formation',
