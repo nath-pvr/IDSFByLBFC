@@ -14,4 +14,8 @@
         ?>
     </div>
 </div>
+
+<?php
+get_template_part("includes/part", "featured");
+?>
 <?php get_footer() ?>
