@@ -19,14 +19,10 @@ get_header() ?>
            
             <h3><?= the_title() ?></h3>
 
-            <div class="card mt-3 col-lg-12  col-sm-12 ms-auto bg-blue ">
+            <div class="mt-3 col-lg-12  col-sm-12 ms-auto ">
                 <div class="row d-flex align-items-center g-0">
-                    <div class="col-lg-4">
-                        <img alt="" src="<?= the_post_thumbnail('card-header')
-                                            ?>">
-                    </div>
                     <div class="col-lg-7 offset-1 d-flex flex-column justify-content-center">
-                        <div class="card-body white my-auto">
+                        <div class="my-auto">
                             <div class="card-text"><?= the_content() ?></div>
 
                         </div>

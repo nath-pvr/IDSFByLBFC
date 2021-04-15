@@ -27,8 +27,8 @@
                         <div class="card mt-3 offset-1 col-lg-5  col-sm-12 ms-auto bg-blue ">
                             <div class="row d-flex align-items-center g-0">
                                 <div class="col-lg-4">
-                                    <img alt="" src="<?= the_post_thumbnail('card-header') 
-                                    ?>">
+                                    <?= the_post_thumbnail('card-header') 
+                                    ?>
                                 </div>
                                 <div class="col-lg-7 offset-1 d-flex flex-column justify-content-center" >
                                     <div class="card-body white my-auto">

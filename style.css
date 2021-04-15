@@ -47,6 +47,8 @@ a{
     text-decoration: none;
 }
 
+
+
 /* Menus */
 
 nav,
@@ -76,7 +78,7 @@ nav,
 
 .menu-back{
     position: absolute;
-    width: 10rem;
+    width: 12rem;
     border-radius: 5%;
     background-color: var(--color-blue-grey)!important;
     transition: all 0.5s ease;
@@ -241,6 +243,18 @@ div#accordionFormComp div.accordion-item button:hover, .accordion-button {
     color:white!important;
     background-color: rgba(60,122,179, 0.5);    
 }
+
+/*financement*/
+
+ 
+div#accordionProf div.accordion-item h2, div#accordionProf div.accordion-item h2 button,
+div#accordionApprentissage div.accordion-item h2, div#accordionApprentissage div.accordion-item h2 button,
+div#accordionAides div.accordion-item h2, div#accordionAides div.accordion-item h2 button
+{
+    color: black!important;
+}
+
+
 
 
 

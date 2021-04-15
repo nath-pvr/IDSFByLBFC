@@ -41,7 +41,7 @@ function idsfTheme_supports_init()
         'has_archive'       => true,
         'rewrite'           => array('slug' => 'idsf'),
         'show_in_nav_menus' => true,
-
+        'taxonomies'        => array('category')
     );
 
         //    //Taxonomies
@@ -146,7 +146,7 @@ function idsfTheme_supports_init()
         'has_archive'       => true,
         'rewrite'           => array('slug' => 'financement'),
         'show_in_nav_menus' => true,
-
+        'taxonomies'        => array('category')
     );
 
 

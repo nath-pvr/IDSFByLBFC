@@ -15,7 +15,6 @@ get_header() ?>
             <div class="card m-3">
                 <div class="card-body mx-auto">
                     <ul>
-                        <li><a href="http://liguebfc-handball.fr/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/LogoligueBFC-iconeinternet-300x76.png" alt=""></a></li>
                         <li><a href="https://www.moncompteformation.gouv.fr/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-cpf" alt=""></a></li>
                     </ul>
                 </div>
@@ -34,7 +33,7 @@ get_header() ?>
                         <div class="card w-75 mb-3">
                             <div class="card-body">
                                 <h5 class="card-title"><?= the_title(); ?></h5>
-                                <p class="card-text"><?= the_content(); ?></p>
+                                <p class="card-text"><?= the_excerpt(); ?></p>
                                 <a href="<?= the_permalink(); ?>" class="btn btn-gold">Lire la suite</a>
                             </div>
                         </div>
