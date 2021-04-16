@@ -171,7 +171,7 @@ function idsfTheme_supports_init()
         'has_archive'       => true,
         'rewrite'           => array('slug' => 'emplois'),
         'show_in_nav_menus' => true,
-
+        'taxonomies'        => array('category')
     );
 
 
