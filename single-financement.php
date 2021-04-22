@@ -6,12 +6,8 @@ get_header() ?>
 
 <div class="container">
 
-    <div class="row flex-row-reverse">
-       
-        <?php
-        get_template_part("includes/part", "accesRap");
-        ?>
-
+    <div class="row">
+   
         <div class="col-lg-8 mt-5 mb-5">
 
         <h2 class="mt-5"><?= the_title() ?></h2>
@@ -27,6 +23,9 @@ get_header() ?>
                 </div>
             </div>
         </div>
+        <?php
+        get_template_part("includes/part", "accesRap");
+        ?>
     </div>
 
 </div>

@@ -13,98 +13,135 @@ Author: POUVRASSEAU Nathalie.
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital@1&display=swap');
 
 /* General */
-html{
-    --color-dark :#070301; 
-    --color-blue :#0F1B5C;
-    --color-gold:#F4DB31!important;
+html {
+    --color-dark: #070301;
+    --color-blue: #0F1B5C;
+    --color-gold: #F4DB31 !important;
     --color-grey: #8E9091;
-    --color-blue-grey:#303440;    
+    --color-blue-grey: #303440;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     text-align: justify;
 }
 
-ul, li{
+ul,
+li {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Lato', sans-serif;
 }
 
-.bg-blue{
-    background-color: var(--color-blue)!important;
+h1 {
+    text-decoration: underline var(--color-gold);
 }
 
-.white{
-    color: white!important;
+h2,
+h3 {
+    text-decoration: underline var(--color-blue);
 }
 
-a{
+.bg-blue {
+    background-color: var(--color-blue) !important;
+}
+
+.white {
+    color: white !important;
+}
+
+a {
     text-decoration: none;
 }
 
+.gold {
+    color: var(--color-gold) !important;
+}
 
+#navbar button.navbar-toggler {
+    border-color: var(--color-gold) !important;
+}
+
+.navbar-toggler-icon {
+    color: var(--color-gold) !important;
+}
+
+.capitale {
+    text-transform: capitalize;
+}
+
+.under {
+    text-decoration: underline var(--color-gold);
+}
 
 /* Menus */
 
 nav,
-#footer{
+#footer {
     background-color: var(--color-dark);
 }
 
-.nav-link{
-    color: white!important;
+.nav-link {
+    color: white !important;
     font-size: 1.5rem;
     margin-left: 5rem;
 }
 
-.nav-link:hover{
-    color: var(--color-gold)!important;
+.nav-link:hover {
+    color: var(--color-gold) !important;
 }
 
-#footer span, #footer i{
+#footer span,
+#footer i {
     color: var(--color-gold);
     text-align: justify;
 }
 
-#RS i{
+#RS i {
     font-size: 1.5rem;
 }
 
 
-.menu-back{
+.menu-back {
     position: absolute;
     width: 12rem;
     border-radius: 5%;
-    background-color: var(--color-blue-grey)!important;
+    background-color: var(--color-blue-grey) !important;
     transition: all 0.5s ease;
     transform: translateX(40px);
     z-index: 50;
 }
 
-.menu-back li{
+.menu-back li {
     transform: translateX(-90px);
 }
 
-.menu-back .nav-link{
+.menu-back .nav-link {
     font-size: 1rem;
 }
 
 /* Sections */
 
-#temoignages, #featured{
+#temoignages,
+#featured {
     background-color: var(--color-blue);
 }
 
-#temoignages h2, #featured h2{
+#temoignages h2,
+#featured h2 {
     color: var(--color-gold);
 }
 
-#temoignages .card, #featured .card{
+#temoignages .card,
+#featured .card {
     border-color: var(--color-gold);
 }
 
@@ -114,208 +151,278 @@ nav,
 
 /*Formations*/
 
-#formation h1{
+#formation h1 {
     text-decoration: underline var(--color-gold);
 }
 
-h2.formEtat{
-    text-decoration:underline var(--color-blue-grey)!important;
+h2.formEtat {
+    text-decoration: underline var(--color-blue-grey) !important;
 }
 
-div#accordionFormEtat div.accordion-item h2, div#accordionFormEtat div.accordion-item h2 button{
-    color:var(--color-blue-grey)!important;
+div#accordionFormEtat div.accordion-item h2,
+div#accordionFormEtat div.accordion-item h2 button {
+    color: var(--color-blue-grey) !important;
+    text-decoration: none;
 }
 
-div#accordionFormEtat div.accordion-item button:hover{
-    color:white!important;
-    background-color: rgba(48,52,64,0.5);
+/* div#accordionFormEtat div.accordion-item button:hover {
+    color: white !important;
+    background-color: rgba(48, 52, 64, 0.5);
+} */
+div#accordionFormEtat div.accordion-item h2#heading17 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(255, 234, 0, 0.5);
 }
 
-#formation h2.formFede{
-    text-decoration:underline var(--color-blue)!important;
+div#accordionFormEtat div.accordion-item h2#heading24 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(255, 130, 0, 0.5);
 }
 
-#formContinue{
-    text-decoration: underline rgba(15,27,92,0.5);
+div#accordionFormEtat div.accordion-item h2#heading22 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(208, 209, 255, 0.5);
 }
 
-div#accordionFormContinue div.accordion-item h2, div#accordionFormContinue div.accordion-item h2 button{
-    color:var(--color-blue)!important;
+div#accordionFormEtat div.accordion-item h2#heading26 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(163, 43, 58, 0.5);
 }
 
-div#accordionFormContinue div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(15,27,92,0.5);
-    
+div#accordionFormEtat div.accordion-item h2#heading20 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(176, 239,142, 0.5);
 }
 
-#formModulaire{
-    text-decoration: underline rgba(15,27,92,0.3);
+#formation h2.formFede {
+    text-decoration: underline var(--color-blue) !important;
 }
 
-#SoCom{
-    text-decoration: underline rgba(122,122,122,0.5);
+#formContinue {
+    text-decoration: underline rgba(15, 27, 92, 0.5);
 }
 
-div#accordionsocleCom div.accordion-item h2, div#accordionsocleCom div.accordion-item h2 button{
-    color:#7A7A7A!important;
+div#accordionFormContinue div.accordion-item h2,
+div#accordionFormContinue div.accordion-item h2 button {
+    color: var(--color-blue) !important;
+    text-decoration: none;
 }
 
-div#accordionsocleCom div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(122,122,122,0.5);    
+
+div#accordionFormContinue div.accordion-item h2#heading28 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(173, 232, 244, 0.5);
 }
 
-#anim{
-    text-decoration: underline rgba(97,206,112,0.5);
+div#accordionFormContinue div.accordion-item h2#heading30 button:hover {
+    color: var(--color-blue)!important;
+    background-color: rgba(0, 119,182, 0.5);
 }
 
-div#accordionJanime div.accordion-item h2, div#accordionJanime div.accordion-item h2 button{
-    color:#61CE70!important;
+
+
+#formModulaire {
+    text-decoration: underline rgba(15, 27, 92, 0.3);
 }
 
-div#accordionJanime div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(97,206,112,0.5);    
+#SoCom {
+    text-decoration: underline rgba(122, 122, 122, 0.5);
 }
 
-#entraine{
-    text-decoration: underline rgba(0,120,175,0.5);
+div#accordionsocleCom div.accordion-item h2,
+div#accordionsocleCom div.accordion-item h2 button {
+    color: #7A7A7A !important;
+    text-decoration: none;
 }
 
-div#accordionJentraine div.accordion-item h2, div#accordionJentraine div.accordion-item h2 button{
-    color:#0078af!important;
+div#accordionsocleCom div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(122, 122, 122, 0.5);
 }
 
-div#accordionJentraine div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(0,120,175,0.5);    
+#anim {
+    text-decoration: underline rgba(97, 206, 112, 0.5);
 }
 
-#arbitrage{
-    text-decoration: underline rgba(187,13,35,0.5);
+div#accordionJanime div.accordion-item h2,
+div#accordionJanime div.accordion-item h2 button {
+    color: #61CE70 !important;
+    text-decoration: none;
 }
 
-div#accordionArbitrage div.accordion-item h2, div#accordionArbitrage div.accordion-item h2 button{
-    color:#bb0d23!important;
+div#accordionJanime div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(97, 206, 112, 0.5);
 }
 
-div#accordionArbitrage div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(187,13,35,0.5);    
+#entraine {
+    text-decoration: underline rgba(0, 120, 175, 0.5);
 }
 
-#dirige{
+div#accordionJentraine div.accordion-item h2,
+div#accordionJentraine div.accordion-item h2 button {
+    color: #0078af !important;
+    text-decoration: none;
+}
+
+div#accordionJentraine div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(0, 120, 175, 0.5);
+}
+
+#arbitrage {
+    text-decoration: underline rgba(187, 13, 35, 0.5);
+}
+
+div#accordionArbitrage div.accordion-item h2,
+div#accordionArbitrage div.accordion-item h2 button {
+    color: #bb0d23 !important;
+    text-decoration: none;
+}
+
+div#accordionArbitrage div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(187, 13, 35, 0.5);
+}
+
+#dirige {
     text-decoration: underline rgba(255, 191, 64, 0.5);
 }
 
-div#accordionJedirige div.accordion-item h2, div#accordionJedirige div.accordion-item h2 button{
-    color:#ffbf40!important;
+div#accordionJedirige div.accordion-item h2,
+div#accordionJedirige div.accordion-item h2 button {
+    color: #ffbf40 !important;
+    text-decoration: none;
 }
 
-div#accordionJedirige div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(255, 191, 64, 0.5);    
+div#accordionJedirige div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(255, 191, 64, 0.5);
 }
 
-#forme{
-    text-decoration: underline rgba(128,0,128, 0.5);
+#forme {
+    text-decoration: underline rgba(128, 0, 128, 0.5);
 }
 
-div#accordionJeforme div.accordion-item h2, div#accordionJeforme div.accordion-item h2 button{
-    color:#800080!important;
+div#accordionJeforme div.accordion-item h2,
+div#accordionJeforme div.accordion-item h2 button {
+    color: #800080 !important;
+    text-decoration: none;
 }
 
-div#accordionJeforme div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(128,0,128, 0.5);    
+div#accordionJeforme div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(128, 0, 128, 0.5);
 }
 
-#formComp{
-    text-decoration: underline rgba(60,122,179, 0.5);
+#formComp {
+    text-decoration: underline rgba(60, 122, 179, 0.5);
 }
 
-div#accordionFormComp div.accordion-item h2, div#accordionFormComp div.accordion-item h2 button{
-    color:#3C7AB3!important;
+div#accordionFormComp div.accordion-item h2,
+div#accordionFormComp div.accordion-item h2 button {
+    color: #3C7AB3 !important;
+    text-decoration: none;
 }
 
-div#accordionFormComp div.accordion-item button:hover, .accordion-button {
-    color:white!important;
-    background-color: rgba(60,122,179, 0.5);    
+div#accordionFormComp div.accordion-item button:hover,
+.accordion-button {
+    color: white !important;
+    background-color: rgba(60, 122, 179, 0.5);
 }
 
 /*financement*/
 
- 
-div#accordionProf div.accordion-item h2, div#accordionProf div.accordion-item h2 button,
-div#accordionApprentissage div.accordion-item h2, div#accordionApprentissage div.accordion-item h2 button,
-div#accordionAides div.accordion-item h2, div#accordionAides div.accordion-item h2 button
-{
-    color: black!important;
+
+div#accordionProf div.accordion-item h2,
+div#accordionProf div.accordion-item h2 button,
+div#accordionApprentissage div.accordion-item h2,
+div#accordionApprentissage div.accordion-item h2 button,
+div#accordionAides div.accordion-item h2,
+div#accordionAides div.accordion-item h2 button {
+    color: black !important;
 }
-
-
-
-
-
 
 
 /* SearchBar */
 
-.search-bar{
-    background-color: var(--color-grey)!important;
-    border-color: var(--color-gold)!important;
-}
-.search-bar:focus{
-    background-color: white!important;
-    box-shadow: 0 0 0 0.25rem var(--color-gold)!important;
+.search-bar {
+    background-color: var(--color-grey) !important;
+    border-color: var(--color-gold) !important;
+    color: var(--color-gold)!important;
 }
 
-.search-bar::placeholder{
-    color: white!important;
+.search-bar:focus {
+    background-color: white !important;
+    box-shadow: 0 0 0 0.25rem var(--color-gold) !important;
+}
+
+.search-bar::placeholder {
+    color: white !important;
 }
 
 
 /* button */
 
-.btn-gold{
-    color: var(--color-blue)!important;
-    border-color: var(--color-gold)!important;
+.btn-gold {
+    color: var(--color-blue) !important;
+    border-color: var(--color-gold) !important;
 }
 
-.btn-gold:hover{
-    color: white!important;
+.btn-gold:hover {
+    color: white !important;
     background-color: var(--color-gold);
 }
 
-
 /* Front-page */
-#carousel{
+#carousel {
     height: 20rem;
     background-color: var(--color-blue);
 }
 
 /* part-accesRap */
 
-#accesRap .card-body a{
+#accesRap {
+    position: fixed;
+    top: 20rem;
+    right: 5rem;
+    z-index: -10;
+}
+
+#accesRap .card-body a {
     color: var(--color-gold);
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
 
-#accesRap .card:hover{
+#accesRap .card:hover {
     background-color: white;
 }
 
-#accesRap .card{
+#accesRap .card {
     background-color: var(--color-blue-grey);
 }
-/* #accesRap .card:hover{
-    background-color: var(--color-blue-grey);
-} */
 
-#accesRap .card:hover a{
+
+#accesRap .card:hover a {
     color: var(--color-blue-grey);
 }
 
+
+@media screen and (max-width: 900px) {
+    #accesRap {
+        display: none !important;
+    }
+
+    #carousel {
+        display: none !important;
+    }
+
+}

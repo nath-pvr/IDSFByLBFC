@@ -12,67 +12,69 @@
 
 <body>
 
-    <!-- <?php if (is_front_page()) : ?> -->
+    <?php if (is_front_page()) : ?>
 
+    <section id="carousel">
 
+        <div class="container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
 
-        <section id="carousel">
+                    <?php
+                    $images = get_posts(
+                        array(
+                            'post_type'         => 'attachment',
+                            'post_mime_type'    => array(
+                                                        'image/jpeg',
+                                                        'image/png'),
+                            'post_status'       => 'inherit',
+                            'showposts'    => -1,
+                        )
 
-            <div class="container">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    );
+                    // var_dump($images);
 
-                        <?php
-                        $images = get_posts(
-                            array(
-                                'post_type'         => 'attachment',
-                                'post_mime_type'    => 'image',
-                                'post_status'       => 'inherit',
-                                'showposts'    => -1,
-                            )
-                            
-                        );
-                        // var_dump($images);
+                    $num_of_images = count($images);
+                    $random_index = rand(0, $num_of_images);
+                    $rand_images_id = $images[$random_index];
+                    $image = get_post($rand_images_id);
 
-                        $num_of_images = count($images);
-                        $random_index = rand(0, $num_of_images);
-                        $rand_images_id = $images[$random_index];
-                        $image = get_post($rand_images_id);
+                    // var_dump($image);
 
-                        // var_dump($image);
+                    $my_query = new WP_Query($image);
+                    // var_dump($my_query);
+                    ?>
+                    <?php if ($my_query->have_posts()) : ?>
+                        <div class="carousel-item active">
+                            <div><?=the_title(), the_content('carousel-header') ?></div>
+                        </div>
 
-                        $my_query = new WP_Query($image);
-                        // var_dump($my_query);
-                         ?>
-                        <?php if ($my_query->have_posts()) : ?>
-                            <div class="carousel-item active">
-                                <div><?= the_content('carousel-header') ?></div>
-                            </div>
+                        <?php while ($my_query->have_posts()) :
+                            $my_query->the_post();
 
-                            <?php while ($my_query->have_posts()) :
-                                $my_query->the_post();
-
-                            ?>
+                        ?>
                             <div class="carousel-item">
-                                <div><?= the_content('carousel-header')?></div>
+                                <div><?=the_title(), the_content('carousel-header') ?></div>
                             </div>
 
-                        <?php endwhile;
-                        endif;
-                        wp_reset_postdata() ?>
-                    </div>
+                    <?php endwhile;
+                    endif;
+                    wp_reset_postdata() ?>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-    <!-- <?php endif ?> -->
+    <?php endif ?>
 
 
-    <nav class="navbar navbar-expand-lg bg-nav ">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-nav ">
         <div class="container-fluid d-flex align-items-end">
             <a class="navbar-brand ms-5" href="<?= get_home_url() ?>"><img width="200px" src="<?php bloginfo('template_url'); ?>/assets/img/IDSF_TxtW.png" alt=""></a>
-
+            <button id="buttonBurger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/bars-solid.svg" alt=""></span>
+            </button>
 
             <div class="collapse navbar-collapse justify-content-end row" id="navbarNav">
                 <?php wp_nav_menu([

@@ -1,6 +1,6 @@
 const submenus = document.querySelectorAll('.sub-menu');
 const menus = document.querySelectorAll('.menu-item-has-children');
-
+const burger = document.getElementById('buttonBurger');
 
 
 
@@ -34,3 +34,16 @@ menus.forEach(menu => {
         menu.children[1].classList.remove('menu-back');
     })
 });
+
+
+/* Média Queries*/
+
+if (window.matchMedia("(max-width: 900px").matches) {
+    burger.addEventListener('click', e => {
+        submenus.forEach(submenu => {
+            submenu.classList.remove('d-none')
+
+        })
+    });
+
+}

@@ -1,4 +1,4 @@
-<div id="accesRap" class="col-lg-3 mb-5 offset-1 d-flex flex-column justify-content-center">
+<div id="accesRap" class="col-lg-3 mb-5 offset-1 d-flex flex-column justify-content-center observable">
 
             <div class="card shadow d-flex align-items-center">
                 <div class="card-body">
@@ -18,4 +18,4 @@
                 </div>
             </div>
 
-        </div>
+</div>

@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 
 <div class="container">
-    <div class="row flex-row-reverse">
-        <?php
-        get_template_part("includes/part", "accesRap");
-        ?>
-
+    <div class="row ">
+        
         <div id="organigramme" class="mb-5 col-lg-8 mt-5">
 
             <h1>Nos lieux de formation</h1>
@@ -45,6 +42,9 @@
             </div>
 
         </div>
+        <?php
+        get_template_part("includes/part", "accesRap");
+        ?>
     </div>
 </div>
 

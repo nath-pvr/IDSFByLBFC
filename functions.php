@@ -44,40 +44,7 @@ function idsfTheme_supports_init()
         'taxonomies'        => array('category')
     );
 
-        //    //Taxonomies
-
-        //    $taxoOrga = array(
-        //        "label"          => "Organigramme",
-        //        "labels"         => array(
-        //             "name"           => "Organigramme",
-        //             "all_items"      => "Tout l'organigramme",
-        //             "edit_item"      => "Éditer l'organigramme",
-        //             "view_item"      => "Voir l'organigramme",
-        //             "update_item"    => "Mettre à jour l'organigramme",
-        //             "add_new_item"   => "Ajouter un rôle",
-        //             "search_item"    => "Rehercher dans l'organigramme"),
-        //         "hierarchical"  => true,
-        //         "show_in_menu"  => true,
-        //         "show_in_rest"  => true,
-        //         "rewrite"       => array('slug' => 'organigramme'),
-        //     );
-
-        //    $taxoSites = array(
-        //        "label"          => "Sites",
-        //        "labels"         => array(
-        //             "name"           => "Sites",
-        //             "all_items"      => "Tous les sites",
-        //             "edit_item"      => "Éditer un site",
-        //             "view_item"      => "Voir les sites",
-        //             "update_item"    => "Mettre à jour les sites",
-        //             "add_new_item"   => "Ajouter un nouveau site/lieu",
-        //             "search_item"    => "Rehercher dans les sites"),
-        //         "hierarchical"  => true,
-        //         "show_in_menu"  => true,
-        //         "show_in_rest"  => true,
-        //         "rewrite"       => array('slug' => 'sites'),
-        //     );
-
+        
     //FORMATIONS
     $labelsFormation = array(
         'singular_name'     => _x('formation', 'Post Type Singular Name'),
@@ -251,8 +218,7 @@ function idsfTheme_supports_init()
 
 
     register_post_type('idsf', $argsIdsf);
-    // register_taxonomy('organigramme', 'idsf', $taxoOrga );
-    // register_taxonomy('sites/lieux', 'idsf', $taxoSites );
+    
 
     register_post_type('formation', $argsFormation);
     register_taxonomy('modules', 'formation', $taxoModule );
@@ -269,7 +235,7 @@ function idsfTheme_supports_init()
 function idsfTheme_register_assets()
 {
     wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
-    wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js', [], false, true);
+    wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js');
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
 }
@@ -286,33 +252,6 @@ function idsfTheme_menu_link_class($attrs)
     return $attrs;
 }
 
-// function idsfTheme_posts_where($where, \WP_Query $q)
-// {
-//     global $wpdb; 
-    
-
-
-//     // if (true !== $q->get('wpse_include_parent'))
-//     // return $where;
-
-//     // $post_parent = filter_var($q->get('post_parent'), FILTER_VALIDATE_INT);
-//     // if(!$post_parent)
-//     // return $where;
-
-//     // $where .="OR $wpdb->posts.ID = $post_parent";
-//     // return $where;
-       
-
-
-// }
-
-
-
-// function idsfTheme_remove_autop(){
-    
-//     remove_filter('the_content', 'wpautop');
-//     remove_filter('the_excerpt', 'wpautop');
-// }
 
 
 

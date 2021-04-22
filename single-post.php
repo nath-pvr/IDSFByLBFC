@@ -1,10 +1,6 @@
 <?php get_header() ?>
 <div class="container">
-    <div class="row flex-row-reverse">
-
-        <?php
-        get_template_part("includes/part", "accesRap");
-        ?>
+    <div class="row">
 
         <div class="col-lg-8 mt-5">
             <?php if (have_posts()) :
@@ -15,6 +11,9 @@
             endif; ?>
         </div>
     </div>
+    <?php
+    get_template_part("includes/part", "accesRap");
+    ?>
 </div>
 
 <?php

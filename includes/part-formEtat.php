@@ -1,7 +1,7 @@
 <?php $formEtat = array(
     'showposts'     => -1,
     'post_type'     => 'formation',
-    'cat' => 3,
+    'cat'           => 3,
 );
 
 $myQuery_formEtat = new WP_Query($formEtat); ?>
